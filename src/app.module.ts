@@ -8,4 +8,5 @@ import { WebScrapperModule } from './module/web/web-scrapper.module';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
+
