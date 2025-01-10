@@ -9,8 +9,8 @@ import { QueryWebScrapperDto } from './dto/query-web-scrapper.dto';
 export class WebScrapperContoller {
   constructor(private readonly webScrapperService: WebScrapperService) {}
 
-  @Get("")
-  async get(@Query()query:QueryWebScrapperDto) {
+  @Get('')
+  async get(@Query() query: QueryWebScrapperDto) {
     return this.webScrapperService.getFaviconCheerio(query.url);
   }
 }
